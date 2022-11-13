@@ -20,16 +20,22 @@
         box-shadow: 15px 15px 10px rgba(0, 0, 0, 0.36);
     }
 
+    td {
+        border: 2px solid rgb(19, 136, 70);
+        padding: 5px;
+        text-align: center; /* alinhamento horizontal */
+        vertical-align: middle; /* alinhamento vertical */
+        color: rgb(32, 48, 1);
+    }
+
     tr.linha4 {
         box-shadow: inset 2px 2px 10px 2px rgba(0, 0, 0, 0.463);
         font-weight: bolder;
         background-color: rgba(0, 235, 0, 0.333);
     }
 
-    td {
-        border: 2px solid rgb(19, 136, 70);
-        padding: 5px;
-        text-align: center;
+    .numero {
+        text-align: right;
     }
 
     td.mark {
@@ -54,12 +60,12 @@
         <tr> <!-- segunda linha -->
             <td>A2</td>
             <td class="mark">B2</td>
-            <td>C2</td>
+            <td class="numero">C2</td>
         </tr>
         <tr> <!-- terceira linha -->
             <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
         <tr class="linha4"> <!-- quarta linha -->
             <td>A4</td>
