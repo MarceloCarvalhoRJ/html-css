@@ -38,11 +38,11 @@
         <thead>
             <th scope="col">Grupo</th> <!--scope define o cabeçalho para alinhamento coluna (col) ou linha (Row)-->
             <th scope="col">Nomes</th>
-            <th scope="col" colspan="3">Filmes</th>
+            <th scope="colgroup" colspan="3">Filmes</th> <!--quando tiver expansão/mesclagem usa o group (de varias linhas "rowgroup" ou colunas)-->
         </thead>
         <tbody>
             <tr>
-                <th scope="row" rowspan="3">Mulheres</th>
+                <th scope="rowgroup" rowspan="3">Mulheres</th>
                 <td class="nome">Ana Maria Santos</td>
                 <td>Alien</td>
                 <td>Rambo</td>
@@ -61,7 +61,7 @@
                 <td>Batman</td>
             </tr>
             <tr>
-                <th scope="row" rowspan="3">Homens</th>
+                <th scope="rowgroup" rowspan="3">Homens</th>
                 <td class="nome">Bruno Mendonça</td>
                 <td>Intocáveis</td>
                 <td>Amnésia</td>
