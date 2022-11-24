@@ -1,0 +1,181 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+/*font-family: 'Sriracha', cursive;*/
+
+html, body {
+    margin: 0%;
+    scroll-behavior: smooth; /* rolagem suave para link na mesma pagina */
+}
+
+body {
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+nav {
+    width: 16%;
+    background: radial-gradient(rgb(255, 62, 24), rgb(249, 138, 116));  
+    padding-top: 50px;
+    padding-right: 20px;
+    line-height: 30px; 
+    
+
+}
+
+#menu {
+    position: fixed;
+    left: 0;
+    top: 10%;
+    width: 10em;
+    margin-top: 1em;
+    padding: 20px;
+    background-color: rgba(247, 27, 27, 0.471);
+    border-radius: 0px 50px 50px 0px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.459);
+}
+
+a {
+    color: #f1f1f1;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding-inline-start: -40px;
+}
+
+a:hover {
+    color: rgb(105, 26, 12);
+}
+    
+header {
+    background-image: url(../imagens/header02.webp);
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 200px;
+    display: flex;
+    box-shadow: inset 30px 30px 30px 30px rgba(0, 0, 0, 0.615);
+}
+
+header > h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-weight: bolder;
+    font-size: 2.2em;
+    text-align: center;
+    font-variant: small-caps;
+    padding-left: 90px;
+    text-shadow: 1px 1px 2px black;  
+}
+
+header > h1 > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: .9em;
+    text-align: center;
+    text-shadow: none;
+    font-weight: lighter;
+}
+
+#botao-menu {                   /*criou um oval embaixo da imagem seta */
+    background-color: gray;
+    border: 1px black;
+    border-radius: 40px;
+}
+
+#botao-menu > img {    /* imagem PNG (fundo transparente)*/
+    height: 30px;
+    width: 30px;
+}
+
+#botao-menu > img:hover {
+    transform: translatey(10px);   /* move a imagem da seta para baixo (eixo y)*/
+    transition-duration: 500ms;    /* duracao da animação*/
+}
+
+em {
+    font-family: 'Sriracha', cursive;
+    font-size: 1.2em;
+    font-variant: normal;
+}
+
+.logo {
+    width: 180px;
+    height: 150px;
+    padding-left: 60px;
+    padding-top: 20px;
+}
+
+.main {
+    display: flex;
+    flex-flow: column;
+    width: 85%;
+}
+
+main {
+    min-height: 500px;
+    padding-left: 20px;
+    padding-right: 20px; 
+    display: flex;
+    justify-content: space-around;
+}
+
+.content {
+    background-color: white;
+    background-image: url(../imagens/header2.1.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-attachment: fixed;
+}
+
+#quem {
+    text-align: center;
+    padding-top: 40px;
+}
+
+.sobre {
+    width: 300px;
+    height: 100%;
+    padding-left: 10px; 
+    padding-right: 10px;
+    padding-top: 60px;
+    font-family: cursive;
+    line-height: 30px;
+}
+
+hr.separator-break {
+    border-color: rgb(153, 31, 7);
+    margin: 0px;
+    width: 90px;
+    border-top-width: 2px
+}
+
+hr.separator {
+    border-color: rgb(153, 31, 7);
+    margin: auto;
+    width: 90px;
+    border-top-width: 2px
+}
+
+.persona, .valores {
+    font-weight: bolder;
+    color: rgb(78, 76, 76);
+}
+
+.lista {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+footer {
+    background-color: rgb(99, 56, 240);
+    min-height: 50px;
+}
