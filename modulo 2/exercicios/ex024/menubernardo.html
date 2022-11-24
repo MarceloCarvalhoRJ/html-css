@@ -7,35 +7,46 @@
     <title>BERNARDO</title>
 </head>
 <style>
+    body {
+        margin: 0 auto;
+    }
+
     h1 {
+        margin: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
         background-color: rgb(235, 153, 0);
-        font-size: 2.5em;
+        font-size: 2.3em;
         color: aliceblue;
         text-align: center;
         font-variant: small-caps ;
         font-family: cursive;
-        padding: 40px;
-        margin-bottom: -20px;
-        width: 100%;
+        
+        
+       
         text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.595);
     }
+
     main {
-        width: 100%;
-        height: 280px;
+        
         background-color: rgb(235, 153, 0);
         display: flex;
-        align-items: top;
         justify-content: space-evenly;
         padding: 20px;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        margin: 10px;
     }
 
     img {
-        width: 220px;
-        height: 150px;
+        width: 180px;
+        height: 120px;
         border-radius: 10px 10px 0 0;
     }
 
-    figure > img:hover {
+    img:hover {
         transform: scale(1.6);
         transition: 500ms;
     }
@@ -46,35 +57,36 @@
         padding: 10px;
         text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.441);
         color: rgba(91, 79, 3, 0.925);
+        text-align: center;
     }
 </style>
 <body>
     <h1><marquee behavior="" direction="left" scrollamount="20px">MENU DO BERNARDO</marquee></h1>
     <main>
-            <figure>
+            <div class="item">
                 <img src="images/curdites de legumes.jpg" alt="crudites">
                 <figcaption>Crudités de Legumes</figcaption>
-            </figure>
+            </div>
 
-            <figure>
+            <div class="item">
                 <img src="images/sandwiches.webp" alt="">
-                <figcaption>Sanduiches com diversos pães</figcaption>
-            </figure>
+                <figcaption>Sanduiches</figcaption>
+            </div>
 
-            <figure>
+            <div class="item">
                 <img src="images/verduras cozidas.webp" alt="verduras">
-                <figcaption>Verduras cozidas no vapor</figcaption>
-            </figure> 
+                <figcaption>Verduras cozidas</figcaption>
+            </div> 
 
-            <figure>
+            <div class="item">
                 <img src="images/carnes.jpg" alt="carnes">
                 <figcaption>Carnes na brasa</figcaption>
-            </figure>
+            </div>
 
-            <figure>
+            <div class="item">
                 <img src="images/petiscos.jpg" alt="petiscos">
                 <figcaption>Petiscos Diversos</figcaption>
-            </figure>
+            </div>
     </main>
 </body>
 </html>

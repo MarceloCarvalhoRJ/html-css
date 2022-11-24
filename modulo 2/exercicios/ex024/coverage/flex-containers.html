@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            max-width: 600px;
+            height: 400px;
+            margin:0 auto;
+            border: 1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* ALINHAMENTO DO EIXO PRINCIPAL (MAIN X) - HORIZONTAL */
+            align-items: flex-start ;   /* ALINHAMENTO DO EIXO SECUNDARIO/CRUZADO (CROOS MAIN) - VERTICAL - MANTÉM o espaçamento entre os itens*/
+            align-content: flex-start; /* ALINHAMENTO DO EIXO SECUNDARIO/CRUZADO (CROOS MAIN) - vai controlar o espacamento entre os flex itens*/
+            
+            
+            
+        }
+
+       /* @media (max-width:700px) {
+            .container {
+                flex-direction: column;
+            }
+        }*/
+
+        .item {
+            background-color: chocolate;
+            font-size: 1em;
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            color: whitesmoke;
+            height: 30px;
+            /*width: calc(33.3333% - 20px); /* os 33,33% é o calculo para que os 3 flex item ocupem a linha toda, porém temos que diminuir 5px de margem e padding tanto para a direita como a esquerda, chegando assim no total de 20px*/
+            flex-grow: 1; /* faz o item ou itens aumentarem ocupando toda a linha, por padrao é 0 e o tamanho aumenta de acordo com o vlr escolhido. Tal aumento vai respeitar o conteudo de cada item. obs. neste caso o justify-content (.contaniner) é desnecessário */
+            flex-basis: 0; /* Deixa todos os flex itens com o mesmo tamanho, independente do conteudo dentro dele. Tamanho aumenta de acordo com o valor escolhido*/
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">CURSO 1 - PHP</div>
+        <div class="item">CURSO 2 - pynthon</div>
+        <div class="item">CURSO 3 - Java Script</div>
+        <!-- <div class="item">CURSO 4</div>
+        <div class="item">CURSO 5</div>
+        <div class="item">CURSO 6</div>
+        <div class="item">CURSO 7</div>
+        <div class="item">CURSO 8</div>
+        <div class="item">CURSO 9</div>
+        <div class="item">CURSO 10</div>-->
+    </div>
+</body>
+</html>
