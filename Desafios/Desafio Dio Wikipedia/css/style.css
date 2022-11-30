@@ -7,7 +7,7 @@ body, html {
 }
 
 ul.menus { list-style: none; padding-left: 5px; }
-a { color:blue; text-decoration: none;}
+a { color:blue; text-decoration: none; text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.303);}
 .bar {
     background-color: #f9f9fb;
     padding:15px;
@@ -16,10 +16,12 @@ a { color:blue; text-decoration: none;}
     
 }
 
-.menus a:hover  {
+.menu a:hover  {
     background-color: rgba(0, 0, 255, 0.885);
     color: whitesmoke;
-    border-radius: 10px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
+    transition: 0.5s;
     padding: 5px;
 }
 
@@ -52,6 +54,7 @@ ul.sub-menu {
 .footer {
     min-height: 100px;
     border-top: solid 1px #cdcdcd;
+    text-align: center;
 }
 .anchors {
     border-left: solid 1px #cdcdcd;
@@ -108,9 +111,14 @@ figcaption {
 }
 
 .img-menu:hover {
-    transform: scale(2);
-    transition: 500ms;
+    width: 150px;
+    height: 150px;
+    transition: 1s;
+    border-radius: 50%;
+    transform: scale(1.4);
+
 }
+
 
 hr {
     margin-top: -20px;
@@ -135,10 +143,6 @@ span > img {
 }
 a:hover span {
     display: block;
-}
-
-a:hover img {
-    border-radius: 10px;
 }
 
 #img-texto {
@@ -221,4 +225,15 @@ figure > .fig {
     width: 585px;
     margin: 0px;
     padding-left: 8px;
+ }
+
+ .logo-st:hover {
+    transform: rotatex(180deg);
+    transition: 2.5s;
+ }
+
+ #ryder:hover, .img-wr-mb:hover, .Foto-Hawkins:hover, .img-criadores:hover {
+    transform: scale(1.5);
+    transition: 0.5s;
+
  }
