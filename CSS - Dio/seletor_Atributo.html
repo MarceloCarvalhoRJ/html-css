@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributo</title>
+    <style>
+        /* seleciona o elemento pelo atributo, independente do valor */
+        [title] {                          
+            background-color: aquamarine; 
+        }
+        /* especifica o elemento pelo valor do atributo */
+        [title='Netflix'] {                
+            background-color: black; 
+            color: gold;
+        }
+        /* procura pela palavra isolada dentro do valor */
+        [title ~='music'] {
+            background-color: green;
+            color: rgb(232, 220, 189);
+        }
+        /* procura somente a palavra ou seguida do hifen dentro do valor */
+        [title |='sound'] {
+            background-color: gold;
+            color: rgb(7, 7, 174);
+        }
+        /* busca o valor que possui o prefixo 'http://' */
+        [href ^='http://'] {
+            background-color: rgb(212, 16, 2);
+            color: whitesmoke;
+        }
+        /* busca o valor que possui o sufixo 'login' */
+        [href $='login'] {
+            background-color: rgb(180, 255, 6);
+            color: rgb(5, 8, 2);
+        }
+        /* busca a palavra independente do lugar que ela se encontra, junta ou separada */
+        [href *='app'] {
+            background-color: rgb(0, 19, 165);
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a title="Netflix" href="https://www.netflix.com/pt/">Netflix</a></li>
+        <li><a title="Prime Video" href="https://www.primevideo.com/">Prime Video</a></li>
+        <li><a title="music Spotify" href="https://www.spotify.com/pt-pt">Spotify</a></li>
+        <li><a title="SoundCloud music" href="https://soundcloud.com/">soundcloud</a></li>
+        <li><a title="sound" href="https://soundcloud.com/">Sounds Radio</a></li>
+        <li><a title="sound-Cloud TV" href="https://soundcloud.com/">Station TV</a></li>
+        <li><a title="Imovie" href="http://soundcloud.com/">Imovie.To</a></li>
+        <li><a title="Hot-dance" href="http://soundcloud.com/">Hot Dace Radio</a></li> <li><a title="TV" href="https://sound.com/login">Streaming Tv</a></li>
+        <li><a title="Share" href="https://.www.app.com/pt/">Share</a></li>
+        <li><a title="Look" href="https://www.netflix.com/pt/app">Look</a></li>
+        <li><a>Disney Plus</a></li>         
+    </ul>
+</body>
+</html>
