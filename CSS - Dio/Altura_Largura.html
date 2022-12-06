@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura e Largura</title>
+    <style>
+        h1 {
+            background-color: aqua;
+            width: auto; /* respeita a largura de acordo com o conteúdo*/
+            height: 100px;
+        }
+
+        #botao {
+            min-width: 200px;  /* Independente do conteúdo, a largura mínima do botão será de 200px */
+            min-height: 200px; /* mesma coisa para a altura */
+        }
+        #limpar {
+            max-width: 400px; /* haverá quebra de linha se o conteúdo for maior que a largura máxima */
+            max-height: 100px; /*  no caso da altura máxima, não haverá aumento da largura*/
+        }
+    </style>
+</head>
+<body>
+    <p>Exemplo de width: auto;</p>
+    <button>O Width Auto</button>
+    <button>É estabelecida de acordo com o tamanho do conteúdo</button>
+    <br>
+    <p>Exemplo de min-width</p>
+    <button>Fechar</button>
+    <button id="botao">Botão</button>
+    <br>
+    <p>Exemplo de max-width</p>
+    <button id="limpar">Lorem</button>
+    <button id="limpar">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio corporis similique quia facilis obcaecati neque, esse minus magni enim quisquam excepturi eligendi magnam soluta culpa harum, hic, inventore nam rem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ab alias expedita in nam veritatis voluptates perspiciatis deserunt ea aliquam fugit similique repudiandae, reprehenderit voluptatem dolores, earum, dolore quia exercitationem!</button>
+</body>
+</html>
