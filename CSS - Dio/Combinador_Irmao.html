@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributo</title>
+    <style>
+        /* Combinador Irmão Adjacente (+) - seleciona o mais próximo
+           Combinador Irmão Geral (~) 
+
+           [seletor] + [combinador] + [seletor] */
+        div + p {
+            background-color: rgb(239, 177, 62);
+        }
+        div ~ p {
+            color: rgb(15, 71, 237);
+        }
+        .fundo-verde + p {
+            background-color: greenyellow;
+        }
+       
+        .fundo-azul p + p {
+            background-color: blueviolet;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Parágrafo 1 - Dentro da div</p>
+        <p>Parágrafo 2 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 3 - Dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 4 - fora da div</p>
+    <p>Parágrafo 5 - fora da div</p>
+
+    <div class="fundo-verde">
+        <p>Parágrafo 6 - Dentro da div</p>
+        <p>Parágrafo 7 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 8 - Dentro da div, dentro do span</p>
+        </span>
+    </div>
+
+    <p>Parágrafo 9 - fora da div</p>
+    <p>Parágrafo 10 - fora da div</p>
+
+    <div class="fundo-azul">
+        <p>Parágrafo 11 - Dentro da div</p>
+        <p>Parágrafo 12 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 13 - Dentro da div, dentro do span</p>
+            <p>Parágrafo 14 - fora da div</p>
+        </span>
+        <p>Parágrafo 15 - fora da div</p>
+        <p>Parágrafo 16 - fora da div</p>
+    </div>
+    
+    <p>Parágrafo 17 - fora da div</p>
+    <p>Parágrafo 18 - fora da div</p>
+   
+</body>
+</html>

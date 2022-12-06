@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributo</title>
+    <style>
+        /* Combinador Descendente (espaço) 
+           [seletor] + [combinador] + [seletor] */
+        li li {
+            color: rgb(5, 195, 5);
+        }
+        #lista-1 li {
+            color: darkviolet;
+        }
+        .fundo-verde li {
+            background-color: bisque;
+        }
+        .fundo-azul #sublista-3 li {
+            color: rgb(5, 5, 204);
+        }
+        
+    </style>
+</head>
+<body>
+    <ul>
+        <li class="fundo-verde" id="lista-1">Item 1
+            <ul id="sublista-1">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+                <li>Subitem C</li>
+            </ul>
+        <li class="fundo-verde" id="lista-2">Item 2
+            <ul id="sublista-2">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        <li class="fundo-azul" id="lista-3">item 3
+            <ul id="sublista-3">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+    </ul>
+</body>
+</html>

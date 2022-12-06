@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Atributo</title>
+    <style>
+        /* Combinador Filho (>) 
+           [seletor] + [combinador] + [seletor] */
+        .fundo-azul p {
+            background-color: greenyellow;
+        }
+        .fundo-azul > p {
+            color: red;
+        }
+        .fundo-verde > p {
+            background-color: aquamarine;
+        }
+        .fundo-verde > span > p {
+            background-color: black;
+            color: goldenrod;
+        }
+        body > p {
+            background-color: rgb(61, 58, 56);
+            color: cyan;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="fundo-verde">
+        <p>Parágrafo 1 - Dentro da div</p>
+        <p>Parágrafo 2 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 3 - Dentro da div, dentro do span</p>
+        </span>
+    </div>
+    <div class="fundo-verde">
+        <p>Parágrafo 4 - Dentro da div</p>
+        <p>Parágrafo 5 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 6 - Dentro da div, dentro do span</p>
+        </span>
+    </div>
+    <div class="fundo-azul">
+        <p>Parágrafo 7 - Dentro da div</p>
+        <p>Parágrafo 8 - Dentro da div</p>
+        <span>
+            <p>Parágrafo 9 - Dentro da div, dentro do span</p>
+        </span>
+    </div>
+    
+    <p>Parágrafo 10 - fora da div</p>
+    <p>Parágrafo 11 - fora da div</p>
+   
+</body>
+</html>
