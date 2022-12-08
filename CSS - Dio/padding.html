@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Margem</title>
+    <style>
+        div {
+            width: 250px;
+            text-align: justify;
+        }
+
+        #elemento1 {
+            background-color: orange;
+            padding: 30px 100px; /* propriedades igual da margem; 30px para cima e abaixo e 100px para os lados */
+            
+        }#elemento2 {
+            background-color: purple;
+            padding: 30px 50px 100px; /* propriedades igual da margem; 30px para cima, 50px para os lados e 100px para baixo */
+        }
+
+        #elemento3 {
+            background-color: rgb(205, 202, 30);
+            padding: 20px 70px 100px 170px; 
+/* igual a margem: top, right, botton e left (sentido horário) */
+        }
+
+        #elemento4 {
+            background-color: cornflowerblue;
+            padding-top: 20px; /* podemos usar de forma individual na escolha de cada lado, sem precisar usar o shortHand*/
+            padding-right: 70px;
+            padding-bottom: 100px;
+            padding-left: 170px;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="elemento1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores consectetur reiciendis esse eveniet, repudiandae perspiciatis accusamus illum laboriosam facilis molestiae mollitia dignissimos libero deleniti maxime quaerat cupiditate. Excepturi, doloremque.</p>
+    </div>
+    <div id="elemento2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores consectetur reiciendis esse eveniet, repudiandae perspiciatis accusamus illum laboriosam facilis molestiae mollitia dignissimos libero deleniti maxime quaerat cupiditate. Excepturi, doloremque.</p>
+    </div>
+    <div id="elemento3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores consectetur reiciendis esse eveniet, repudiandae perspiciatis accusamus illum laboriosam facilis molestiae mollitia dignissimos libero deleniti maxime quaerat cupiditate. Excepturi, doloremque.</p>
+    </div>
+    <div id="elemento4">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure asperiores consectetur reiciendis esse eveniet, repudiandae perspiciatis accusamus illum laboriosam facilis molestiae mollitia dignissimos libero deleniti maxime quaerat cupiditate. Excepturi, doloremque.</p>
+    </div>
+</body>
+</html>

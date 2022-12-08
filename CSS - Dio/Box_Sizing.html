@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        #elemento1 {
+            background-color: orange;
+            box-sizing: content-box; /* aumenta o elemento, soma o padding + margem ao valor que foi definido para a altura/largura. */
+            
+        }#elemento2 {
+            background-color: purple;
+            box-sizing: border-box; /* nao aumenta o elemento, ele ajusta o conteudo ao tamanho definido na altura/largura */
+        }
+    </style>
+</head>
+<body>
+    <div id="elemento1">
+    </div>
+    <div id="elemento2">
+    </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade Margem</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+        }
+
+        #elemento1 {
+            background-color: orange;
+            margin: 40px 10px; /* aplicar 40px para top e bottom e 10px para left e right */
+        }#elemento2 {
+            background-color: purple;
+            /*margin: 30px 10px 50px;  30px= Top; 10px= Lados (left e right); 50px= botton */
+            margin: 10px 20px 30px 40px; /* os valores seguiram na ordem: top, right, botton e left. */
+        }
+
+        #elemento3 {
+            background-color: rgb(205, 202, 30);
+            margin: 50px auto; /* auto -> calcula o espaço que resta onde o elemento se encontra e o divide de forma igual para a direita e esquerda, centralizando o elemento./ 50px -> aplica margem para cima e para baixo. */
+        }
+
+        #elemento4 {
+            background-color: cornflowerblue;
+            margin-top: -200px; /* podemos aplicar valores negativos para movimentar o objeto para dentro de outro elemento */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="elemento1">Elemento 1</div>
+    <div id="elemento2">Elemento 2</div>
+    <div id="elemento3">Elemento 3</div>
+    <div id="elemento4">Elemento 4</div>
+</body>
+</html>
