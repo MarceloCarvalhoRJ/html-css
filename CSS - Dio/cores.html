@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="br-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores</title>
+    <style>
+        #pre-definidas {
+            color: teal; /* mais de 140 cores por nome, ver no Site https://www.w3schools.com/tags/ref_colornames.asp */
+        }
+        #current-color {
+            color: mediumblue;
+            border: 2px solid currentColor; /* repete a cor da propriedade color */
+            background-color: transparent; /* auto explicativo */   
+        }
+
+        #rgb {
+            background-color: rgb(43, 0, 255);
+            color: rgb(0, 255, 255);
+        }
+
+        #rgba {
+            background-color: rgba(255, 228, 196, 0.9); /* mesmas propriedades do RGB mais um canal Alfa que define a transparencia da cor*/
+            color: rgba(59, 59, 3, 0.8); /* o A vai de 0% -> 0.0 a 100% -> 1.0 de transparencia, nesse exemplo a cor tem 0.8 (80%) */
+        }
+
+        #hex {  /* a cor é determinada por numeros de 0 a 9 e de letras de A a F, por isso o nome é Hexadecimal */
+            background-color: #000000; /* menor valor */
+            color: #ffffff; /* maior valor */
+
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores utilizando o CSS, são elas:
+        <ul>
+            <li id="pre-definidas">Cores pre-definidas</li>
+            <li id="current-color">Palavra chave "current-color"</li>
+            <li id="hex">Hexadecimal</li>
+            <li id="hex-transparencia">Hexadecimal com transparencia</li>
+            <li id="rgb">RGB (Red, Green, Blue)</li>
+            <li id="rgba">RGBA</li>
+            <li id="hsl">HSL</li>
+            <li id="hsla">HSLA</li>
+        </ul>
+    </p>
+    
+</body>
+</html>
