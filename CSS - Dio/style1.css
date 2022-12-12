@@ -1,0 +1,17 @@
+@import url();
+div {
+    width: 300px;
+    height: 300px;
+    background-color: palegoldenrod;
+}
+.exemplo1 {
+    background-image: url(coverage/20210524_110406.jpg);
+}
+
+.exemplo2 {
+    background-image: linear-gradient(#5c0b0b, #ce5581, #d173b0 );
+}
+
+.exemplo3 {
+    background-image: radial-gradient(#d173b0, #5c0b0b, #ce5581 );
+}

@@ -1,0 +1,34 @@
+@import url();
+div {
+    width: 300px;
+    height: 300px;
+    background-color: palegoldenrod;
+}
+.auto {
+    background-image: url(coverage/20210524_110406.jpg);
+    background-size: auto; /* valor padrão */
+}
+
+.cover {
+    background-image: url(coverage/20210524_110406.jpg);
+    background-size: cover;
+}
+
+.contain {
+    background-image: url(coverage/20210524_110406.jpg);
+    background-size: contain;
+}
+.tamanho-largura {
+    background-image: url(coverage/20210524_110406.jpg);
+    background-size: 200px; /* dimensiona pela largura (eixo x) pode ser em px ou %. Altura é feita de forma automatica */
+}
+.tamanho-largura-e-altura {
+    background-image: url(coverage/20210524_110406.jpg);
+    background-size: 200px 100%; /* dimensiona pela largura e largura (eixo x e y) pode ser em px ou %.*/
+}
+.exemplo-camadas {
+    background-image: url(coverage/Wine-Pouring-PNG.png), url(coverage/20210524_110406.jpg); /* sobrepor uma foto por cima da outra, usar arquivo PNG (transparente)*/
+    background-size: contain, cover; /* camada 1 - primeiro plano , camada 2 - imagem de fundo*/
+    background-repeat: no-repeat;
+    
+}
